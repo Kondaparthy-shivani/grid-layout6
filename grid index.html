@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IPL Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to right, #414345, #232526);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .box {
+            background-color: brown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .p2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .p3 {
+            text-align: center;
+        }
+
+        .img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                height: auto;
+                padding: 10px;
+            }
+
+            .boxes {
+                grid-template-columns: 1fr;
+            }
+
+            .p2 {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+       .box2{
+        background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+       }
+       .box1{
+        background: #1488CC;
+            background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+
+            background: linear-gradient(to right, #2B32B2, #1488CC);
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+       }
+       .box3{
+        background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+ }
+ .box4{
+    background: #E44D26;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.box5{
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} 
+.box6{
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+}
+.box7{
+    background: #D38312;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          display: flex;
+
+            
+
+}
+.box8{
+    background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+}
+.box9{
+    background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display:none
+}
+     
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes">
+            <div class="box1">
+                <h1>1260</h1>
+                <p>Sixes</p>
+            </div>
+            <div class="box2">
+                <div class="p2">
+                    <div class="p3">
+                        <p>Winners</p>
+                        <h1>Chennai Super Kings</h1>
+                    </div>
+                    <img src="image8.png" class="img">
+                </div>
+            </div>
+            <div class="box3">
+                <h1>14</h1>
+                <p>Hundreds</p>
+            </div>
+            <div class="box4">
+                <div class="p2">
+                    <img src="image.avif" class="img">
+                    <div class="p3">
+                        <h1>Virat Kohli</h1>
+                        <p>Total Runs: 741</p>
+                        <p>Strike Rate: 154.7</p>
+                        <p>Matches Played: 15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box5">
+                <div class="p2">
+                    <img src="image2.avif" class="img">
+                    <div class="p3">
+                        <button>FairPlay</button>
+                        <h1>Sunrisers Hyderabad</h1>
+                        <p>Points: 173</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box6">
+                <i class="fa-solid fa-image"></i>
+                <p>Pictures</p>
+            </div>
+            <div class="box7">
+                <h1>Interesting Facts</h1>
+                <p>"Kolkata Knight Riders crowned champions for the third time, previously winning in 2012 and 2014."</p>
+            </div>
+            <div class="box8">
+                <i class="fa-solid fa-clipboard"></i>
+                <p>Match Reports</p>
+            </div>
+            <div class="box9">
+                <i class="fa-solid fa-circle-play"></i>
+                <p>Highlights</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
